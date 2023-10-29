@@ -1,6 +1,7 @@
 :root {
   --bgcolor: #f6ac31;
 }
+
 /* 底部导航 */
 .footer {
   height: 60px;
@@ -28,6 +29,6 @@
 .footer-list ul i {
   font-size: 25px;
 }
-.selected{
+.selected {
   color: var(--bgcolor);
 }

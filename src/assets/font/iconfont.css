@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4306478 */
-  src: url('iconfont.woff2?t=1698562546048') format('woff2'),
-       url('iconfont.woff?t=1698562546048') format('woff'),
-       url('iconfont.ttf?t=1698562546048') format('truetype');
+  src: url('iconfont.woff2?t=1698568381311') format('woff2'),
+       url('iconfont.woff?t=1698568381311') format('woff'),
+       url('iconfont.ttf?t=1698568381311') format('truetype');
 }
 
 .iconfont {
@@ -13,9 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sousuo:before {
+  content: "\e665";
+}
+
 .icon-geren:before {
   content: "\e615";
-  font-size: 24px;
 }
 
 .icon-shequ-jihuo:before {
@@ -28,6 +31,5 @@
 
 .icon-ziliaozhongxin:before {
   content: "\e60c";
-  font-size: 24px;
 }
 
