@@ -34,22 +34,35 @@
 }
 
 /* 头部 */
-.header-search{
-  background-color: #F8D447;
+.header-search {
+  background-color: #f8d447;
   padding: 10px;
 }
-.search-list{
-  background-color: rgba(255, 255, 255, .5);
+.search-list {
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding: 10px;
 }
 .header-search input {
-  border: 0;background-color: transparent;
+  border: 0;
+  background-color: transparent;
   margin-left: 10px;
 }
 .header-search input::placeholder,
-.header-search i{
+.header-search i {
   color: #999;
   letter-spacing: 1px;
   /* ↑ 字间距(中文)设置,英文是word-spacing */
+}
+.header-tabs {
+  display: flex;
+  background-color: #f8d447;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px;
+  justify-content: space-between;
+  color: #6F601B;
+  position: sticky;
+  /* 粘性定位 */
+  
 }
