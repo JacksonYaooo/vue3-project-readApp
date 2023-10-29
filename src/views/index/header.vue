@@ -6,7 +6,7 @@
         <input type="text" placeholder="请输入书名 / 作者">
       </div>
     </div>
-    <van-stikey>
+    <van-sticky>
       <ul class="header-tabs">
         <li>推荐</li>
         <li>男生</li>
@@ -15,8 +15,8 @@
         <li>新书</li>
         <li>最新上架</li>
       </ul>
-    </van-stikey>
-    <div>
+    </van-sticky>
+    <div class='box'>
       <img src="@/assets/images/header.jpg" alt="">
     </div>
   </div>
