@@ -2,9 +2,28 @@ import { createRouter, createWebHashHistory } from "vue-router"; // 路由的模
 
 const routes = [
   {
-    path:'/', // 路径
-    name:'Home', // 名字
-    component:()=>import('')
+    path: '/',
+    redirect:'/index'  // 把‘/’重定向为首页
+  },
+  {
+    path: '/index', // 首页
+    name: 'index',
+    component: () => import('../views/index/index.vue')
+  },
+  {
+    path: '/community', // 社区
+    name: 'community',
+    component: () => import('../views/community/index.vue')
+  },
+  {
+    path: '/welfare', // 福利
+    name: 'welfare',
+    component: () => import('../views/welfare/index.vue')
+  },
+  {
+    path: '/my', // 我的
+    name: 'my',
+    component: () => import('../views/my/index.vue')
   }
 ]
 
