@@ -1,8 +1,10 @@
 <template>
   <div class="header">
     <div class="header-search">
-      <i class="iconfont icon-sousuo"></i>
-      <input type="text" placeholder="请输入书名/作者">
+      <div class="search-list">
+        <i class="iconfont icon-sousuo"></i>
+        <input type="text" placeholder="请输入书名 / 作者">
+      </div>
     </div>
     <div class="">
       <ul>

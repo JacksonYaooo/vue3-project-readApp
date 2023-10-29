@@ -32,3 +32,24 @@
 .selected {
   color: var(--bgcolor);
 }
+
+/* 头部 */
+.header-search{
+  background-color: #F8D447;
+  padding: 10px;
+}
+.search-list{
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 10px;
+  padding: 10px;
+}
+.header-search input {
+  border: 0;background-color: transparent;
+  margin-left: 10px;
+}
+.header-search input::placeholder,
+.header-search i{
+  color: #999;
+  letter-spacing: 1px;
+  /* ↑ 字间距(中文)设置,英文是word-spacing */
+}
