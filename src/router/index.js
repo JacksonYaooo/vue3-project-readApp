@@ -29,7 +29,8 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes // 相当于routes:routes的简写
+  routes, // 相当于routes:routes的简写
+  linkActiveClass:'selected'  // 自动添加active类名
 })
 
 export default router
