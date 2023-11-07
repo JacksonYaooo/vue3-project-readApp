@@ -65,3 +65,13 @@
   position: sticky;
   /* 粘性定位 */
 }
+
+/* 排行榜 */
+.charts{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.charts h4{
+  font-size: 16px;
+}

@@ -16,7 +16,7 @@
         <li>最新上架</li>
       </ul>
     </van-sticky>
-    <div class='box'>
+    <div>
       <img src="@/assets/images/header.jpg" alt="">
     </div>
   </div>
