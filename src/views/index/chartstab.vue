@@ -5,7 +5,14 @@
         <div class="chartstab-content">
           <div class="chartstab-item">
             <div class="chartstab-list" v-for="(item,i) in v.content" :key="i">
-              {{ item.name }}
+              <div class="chartstab-img">
+                <img src="@/assets/images/1.jpg" alt="">
+              </div>
+              <div class="chartstab-title">
+                <h4>{{ item.name }}</h4>
+                <p>111</p>
+                <p>kjbdcksjn</p>
+              </div>
             </div>
           </div>
         </div>
@@ -19,7 +26,7 @@ import { ref } from 'vue';
 
 const active = ref(0);
 const chartstab = ref([
-  {title:'全部',content:[{name:'内容1',},{name:'内容a',},{name:'内容b',},{name:'内容1A',},{name:'内容Aa',},{name:'内容Ab',},]},
+  {title:'全部',content:[{name:'内容1',},{name:'内容a',},{name:'内容b',},{name:'内容1A',},{name:'内容Aa',},{name:'内容Ab',},{name:'内容1',},{name:'内容a',},{name:'内容b',},{name:'内容1A',},{name:'内容Aa',},{name:'内容Ab',},]},
   {title:'都市',content:[{name:'内容1',},{name:'内容a',},{name:'内容b',},]},
   {title:'历史',content:[{name:'内容1',},{name:'内容a',},{name:'内容b',},]},
   {title:'科幻',content:[{name:'内容1',},{name:'内容a',},{name:'内容b',},]},
