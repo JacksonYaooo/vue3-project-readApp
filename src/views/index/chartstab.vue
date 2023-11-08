@@ -26,15 +26,16 @@ const active = ref(0);
 
 <style scoped>
 .box{
-  overflow: auto;
-  white-space: nowrap;
+  display: flex;
+  overflow-x: auto;
 }
 .box-item {
-  background: red;
-  padding: 5px 20px;
-  display: inline-block;
-  margin: 5px;
+  width: 100px;
+  background-color: red;
+  flex-shrink: 0;  /* 固定元素不被挤压 */
+  margin: 0 5px;
 }
+/* 滚动条的隐藏 */
 .box::-webkit-scrollbar{
   display: none;
 }
