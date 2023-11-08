@@ -98,3 +98,24 @@
   background-color: #f5cb3b;
   color: #FFF;
 }
+
+.chartstab .van-tabs{
+  overflow-x: auto;
+}
+.chartstab .van-tab{
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  margin: 0 6px;
+  word-spacing: nowrap;
+  padding: 0 16px;
+}
+.chartstab .van-tabs__line{
+  background-color: transparent;
+}
+.chartstab .van-tabs--line .van-tabs__wrap{
+  height: 30px;
+}
+.chartstab .van-tab--active{
+  background-color: #f8d447;
+  color: #333;
+}

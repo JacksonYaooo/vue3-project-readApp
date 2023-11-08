@@ -1,20 +1,8 @@
 <template>
   <div class="chartstab">
     <van-tabs v-model:active="active">
-      <van-tab title="标签 1">内容 1</van-tab>
-      <van-tab title="标签 2">内容 2</van-tab>
-      <van-tab title="标签 3">内容 3</van-tab>
-      <van-tab title="标签 4">内容 4</van-tab>
+      <van-tab :title="v.title" v-for="(v,i) in chartstab" :key="i">{{ v.content }}</van-tab>
     </van-tabs>
-  </div>
-  <div class="box">
-    <div class="box-item">11</div>
-    <div class="box-item">22</div>
-    <div class="box-item">33</div>
-    <div class="box-item">44</div>
-    <div class="box-item">55</div>
-    <div class="box-item">66</div>
-    <div class="box-item">66</div>
   </div>
 </template>
 
@@ -22,21 +10,16 @@
 import { ref } from 'vue';
 
 const active = ref(0);
+const chartstab = ref([
+  {title:'全部',content:'内容1'},
+  {title:'都市',content:'内容2'},
+  {title:'历史',content:'内容3'},
+  {title:'科幻',content:'内容4'},
+  {title:'全部',content:'内容5'},
+  {title:'都市',content:'内容6'},
+])
 </script>
 
 <style scoped>
-.box{
-  display: flex;
-  overflow-x: auto;
-}
-.box-item {
-  width: 100px;
-  background-color: red;
-  flex-shrink: 0;  /* 固定元素不被挤压 */
-  margin: 0 5px;
-}
-/* 滚动条的隐藏 */
-.box::-webkit-scrollbar{
-  display: none;
-}
+
 </style>
