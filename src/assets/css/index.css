@@ -75,3 +75,25 @@
 .charts h4{
   font-size: 16px;
 }
+
+.popupList{
+  padding: 10px;
+  text-align: center;
+}
+.popupList h4{
+  padding: 10px;
+}
+.popupList ul{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+.popupList ul li{
+  background-color: #F1F1F1;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.popupList .active{
+  background-color: #f5cb3b;
+  color: #FFF;
+}
