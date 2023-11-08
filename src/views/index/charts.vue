@@ -1,12 +1,12 @@
 <template>
   <div class="charts">
     <h4>排行榜</h4>
-    <div>热门分类</div>
+    <popup/>
   </div>
 </template>
 
 <script setup>
-
+import popup from './popup.vue'; 
 </script>
 
 <style lang='scss' scoped>
