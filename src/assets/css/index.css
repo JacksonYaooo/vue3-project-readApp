@@ -119,3 +119,23 @@
   background-color: #f8d447;
   color: #333;
 }
+
+.chartstab-content::-webkit-scrollbar{
+  display: none;
+}
+.chartstab-content{
+  display: flex;
+  height: 350px;
+  overflow-x: auto;
+}
+.chartstab-item{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.chartstab-list{
+  display: flex;
+  width: 200px;
+  height: 65px;
+  margin: 6px;
+}
