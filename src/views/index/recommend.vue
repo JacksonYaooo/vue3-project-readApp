@@ -6,46 +6,14 @@
     </div>
     <div class="recommend-list">
       <ul>
-        <li>
+        <li v-for="(v,i) in recommmendList" :key="i">
           <div class="recommend-img">
-            <img src="@/assets/images/1.jpg" alt="">
+            <img :src="`/src/assets/images/${v.img_url}`" alt="">
           </div>
           <div class="recommend-title">
-            <h4>剑来</h4>
-            <p class="recommend-title-author">作者名</p>
-            <p class="recommend-title-desc">
-              内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="recommend-img">
-            <img src="@/assets/images/1.jpg" alt="">
-          </div>
-          <div class="recommend-title">
-            <h4>剑来</h4>
-            <p>作者名</p>
-            <p>内容展示</p>
-          </div>
-        </li>
-        <li>
-          <div class="recommend-img">
-            <img src="@/assets/images/1.jpg" alt="">
-          </div>
-          <div class="recommend-title">
-            <h4>剑来</h4>
-            <p>作者名</p>
-            <p>内容展示</p>
-          </div>
-        </li>
-        <li>
-          <div class="recommend-img">
-            <img src="@/assets/images/1.jpg" alt="">
-          </div>
-          <div class="recommend-title">
-            <h4>剑来</h4>
-            <p>作者名</p>
-            <p>内容展示</p>
+            <h4>{{v.title}}</h4>
+            <p class="recommend-title-author">{{v.author}}</p>
+            <p class="recommend-title-desc">{{v.desc}}</p>
           </div>
         </li>
       </ul>
@@ -54,7 +22,15 @@
 </template>
 
 <script setup>
+import {ref} from 'vue'
 
+let recommmendList = ref([
+  {title:'剑来',img_url:'1.jpg',author:'作者名1',desc:'内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示'},
+  {title:'剑来',img_url:'1.jpg',author:'作者名2',desc:'内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示'},
+  {title:'剑来',img_url:'1.jpg',author:'作者名3',desc:'内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示'},
+  {title:'剑来',img_url:'1.jpg',author:'作者名4',desc:'内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示'},
+  {title:'剑来',img_url:'1.jpg',author:'作者名5',desc:'内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示内容展示'},
+])
 </script>
 
 <styl scoped>
