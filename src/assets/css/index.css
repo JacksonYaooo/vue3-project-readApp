@@ -250,3 +250,39 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+/* 设置喜好 */
+.like-list{
+  padding: 0 20px;
+}
+.like-list h4{
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+}
+.like-list p{
+  font-weight: 600;
+}
+.like-list ul{
+  display: grid;
+  /* 显示3列 */
+  grid-template-columns: repeat(3,1fr);
+  /* 设置  行与列  的间距 */
+  /* 如果有2个参数分别表示行 列，如果只有一个参数表示行和列都有 */
+  gap: 15px;
+  margin: 10px 0;
+  text-align: center;
+}
+.like-list ul li{
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 30px;
+  /* 网格布局 */
+  display: grid;
+  align-items: center;
+}
+/* 选中标签的样式 */
+.like-list .addclass{
+  background-color: #fbf2eb;
+  color: #e2784d;
+}
