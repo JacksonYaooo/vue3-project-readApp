@@ -4,6 +4,7 @@
     <Charts></Charts>
     <Chartstab/>
     <Banner/>
+    <Recommend/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@
   import Charts from './charts.vue'
   import Chartstab from './chartstab.vue';
   import Banner from './banner.vue';
+  import Recommend from './recommend.vue';
 </script>
 
 <style lang='scss' scoped>
