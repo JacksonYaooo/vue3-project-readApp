@@ -305,3 +305,56 @@
 .spread .jump b{
   margin-left: 10px;
 }
+
+/* 社区 */
+.community-hd{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px #ddd;
+}
+.community-hd-item{
+  max-width: 1080px;
+}
+.community-hd-item h3{
+  font-size: 20px;
+  padding: 10px;
+}
+.community-body{
+  height: 2000px;
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  padding: 10px;
+
+}
+.community-body-item{
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.community-item-hd{
+  display: flex;
+  align-items: center;
+}
+.community-item-hd img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.community-item-hd p{
+  margin: 0 10px;
+}
+.community-item-hd span{
+  color: var(--bgcolor);
+  font-size: 12px;
+  flex: 1;
+  /* 占满父级的剩余空间 */
+}
+.community-share i{
+  color: #999;
+  font-size: 22px;
+
+}
