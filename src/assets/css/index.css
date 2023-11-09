@@ -176,3 +176,14 @@
 .chartstab-list:nth-child(-n+3) .chartstab-title::before{
   color: red;
 }
+
+/* 轮播图 */
+.banner{
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.banner img{
+ border-radius: 10px;
+
+}

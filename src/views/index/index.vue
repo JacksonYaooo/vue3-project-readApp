@@ -3,6 +3,7 @@
     <Header></Header>
     <Charts></Charts>
     <Chartstab/>
+    <Banner/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
   import Header from './header.vue'
   import Charts from './charts.vue'
   import Chartstab from './chartstab.vue';
+  import Banner from './banner.vue';
 </script>
 
 <style lang='scss' scoped>
