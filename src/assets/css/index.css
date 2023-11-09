@@ -356,5 +356,20 @@
 .community-share i{
   color: #999;
   font-size: 22px;
-
+}
+.community-item-title{
+  /* 多行省略号显示 */
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;/* 行数 */
+  overflow: hidden;
+}
+.community-item-img{
+  display: flex;
+}
+.community-item-img img{
+  overflow: hidden;
+  max-width: 50%;
+  margin: 0 5px;
 }

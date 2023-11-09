@@ -16,10 +16,12 @@
           </div>
         </div>
         <div class="community-item-title">
-          为什么会这样?
+          为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?
         </div>
         <div class="community-item-img">
-          图片
+          <img src="@/assets/images/h.jpg" alt="">
+          <img src="@/assets/images/h.jpg" alt="">
+          <img src="@/assets/images/h.jpg" alt="">
         </div>
         <div class="community-item-review">
           图标
