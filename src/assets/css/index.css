@@ -286,3 +286,22 @@
   background-color: #fbf2eb;
   color: #e2784d;
 }
+
+/* 开屏广告 */
+.spread{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(@/assets/images/pic.jpg) no-repeat top center;
+  background-size: cover;
+  z-index: 999;
+}
+.spread .jump{
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+.spread .jump b{
+  margin-left: 10px;
+}
