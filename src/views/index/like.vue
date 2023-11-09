@@ -5,7 +5,7 @@
       position="bottom" :style="{ height: '60%' }">
       <div class="like-list">
         <h4>请选择你的喜好：</h4>
-        <p>请选择你喜欢的分类：(已选择 个)</p>
+        <p>请选择你喜欢的分类：(已选择{{ sum() }}个)</p>
         <ul>
           <li v-for="(v, i) in likeList" :key="v.id" @click="v.flag=!v.flag" 
           :class=' v.flag ? "addclass" : "" '>{{ v.name }}</li>
@@ -38,7 +38,10 @@ const likeList = ref([
   { name: '男生', id: 13, flag: false }
 ])
 const n = ref(0)
-
+// 选中标签计数
+function sum(){
+  return likeList.value.filter(v => v.flag).length
+}
 </script>
 
 <style scoped></style>
