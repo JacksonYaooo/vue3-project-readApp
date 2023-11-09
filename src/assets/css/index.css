@@ -196,6 +196,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 .recommend-like h3::before {
   content: "";
@@ -203,7 +204,7 @@
   height: 10px;
   background: linear-gradient(transparent 20%, var(--bgcolor));
   position: absolute;
-  bottom: -3px;
+  bottom: 5px;
   left: 0;
 }
 .recommend-list {
