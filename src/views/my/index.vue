@@ -30,13 +30,20 @@
       </div>
       <div class="my-body-item2">
         <ul>
-          <li v-for="(v,i) in myitem2" :key="i">
+          <li v-for="(v, i) in myitem2" :key="i">
             <i class="iconfont" :class="v.icon"></i>
             <p>{{ v.title }}</p>
           </li>
         </ul>
       </div>
-      <div class="my-body-item3">3</div>
+      <div class="my-body-item3">
+        <ul>
+          <li v-for="(v, i) in myitem3" :key="i">
+            <i class="iconfont" :class="v.icon"></i>
+            <p>{{ v.title }}</p>
+          </li>
+        </ul>
+      </div>
       <div class="my-body-item4">4</div>
     </div>
   </div>
@@ -45,10 +52,20 @@
 <script setup>
 import { ref } from "vue";
 let myitem2 = ref([
-  {title:'阅读历史',icon:'icon-shouye'},
-  {title:'金选票',icon:'icon-dianyingpiao'},
-  {title:'书友圈',icon:'icon-quanquanmendianb'},
-  {title:'消息通知',icon:'icon-xiaoxitongzhi'},
+  { title: '阅读历史', icon: 'icon-shouye' },
+  { title: '金选票', icon: 'icon-dianyingpiao' },
+  { title: '书友圈', icon: 'icon-quanquanmendianb' },
+  { title: '消息通知', icon: 'icon-xiaoxitongzhi' },
+])
+let myitem3 = ref([
+  { title: '我的评论', icon: 'icon-shouye' },
+  { title: '阅读喜好', icon: 'icon-dianyingpiao' },
+  { title: '帮助与反馈', icon: 'icon-quanquanmendianb' },
+  { title: '邀请好友', icon: 'icon-xiaoxitongzhi' },
+  { title: '我的评论', icon: 'icon-shouye' },
+  { title: '阅读喜好', icon: 'icon-dianyingpiao' },
+  { title: '帮助与反馈', icon: 'icon-quanquanmendianb' },
+  { title: '邀请好友', icon: 'icon-xiaoxitongzhi' },
 ])
 </script>
 

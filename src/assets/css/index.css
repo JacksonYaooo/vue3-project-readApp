@@ -457,6 +457,17 @@
   padding: 20px;
   text-align: center;
 }
-.my-body-item2 ul li i{
+.my-body-item2 ul i,
+.my-body-item3 ul i{
   font-size: 24px;
+}
+.my-body-item3 ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.my-body-item3 ul li{
+  padding: 10px;
 }
