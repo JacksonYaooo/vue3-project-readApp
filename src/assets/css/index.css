@@ -471,3 +471,21 @@
 .my-body-item3 ul li{
   padding: 10px;
 }
+.my-body-item4{
+  background-color: #fff;
+}
+.my-body-item4 ul{
+  padding: 10px;
+}
+.my-body-item4 li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 10px;
+  margin: 10px;
+}
+.my-body-item4 li p{
+  font-size: 16px;
+  font-weight: 600;
+}

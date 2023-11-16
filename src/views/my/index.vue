@@ -44,7 +44,14 @@
           </li>
         </ul>
       </div>
-      <div class="my-body-item4">4</div>
+      <div class="my-body-item4">
+        <ul>
+          <li v-for="(v, i) in myitem4" :key="i">
+            <p>{{ v }}</p>
+            <i class="iconfont icon-you"></i>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -66,6 +73,9 @@ let myitem3 = ref([
   { title: '阅读喜好', icon: 'icon-dianyingpiao' },
   { title: '帮助与反馈', icon: 'icon-quanquanmendianb' },
   { title: '邀请好友', icon: 'icon-xiaoxitongzhi' },
+])
+let myitem4 = ref([
+  '消息中心', '奖品中心', '已购书籍', '意见反馈'
 ])
 </script>
 
