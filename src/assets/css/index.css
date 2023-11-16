@@ -373,3 +373,10 @@
   max-width: 50%;
   margin: 0 5px;
 }
+.community-item-review{
+  text-align: center;
+  margin-top: 20px;
+}
+.community-item-review span{
+  margin: 0 30px;
+}
