@@ -1,13 +1,55 @@
 <template>
-  <div>
-    我的
+  <div class="my">
+    <div class="my-hd">
+      <div class="my-hd-login">
+        <div class="my-hd-img">
+          <img src="@/assets/images/h.jpg" alt="">
+        </div>
+        <div class="my-hd-item">
+          <div class="tourist">游客</div>
+          <button>点击登录</button>
+        </div>
+      </div>
+    </div>
+    <div class="my-body">
+      <div class="my-body-item1">
+        <ul>
+          <li>
+            <i class="iconfont icon-biyan"></i>
+            <p>我的金币</p>
+          </li>
+          <li>
+            <i class="iconfont icon-biyan"></i>
+            <p>我的金币</p>
+          </li>
+          <li>
+            <i class="iconfont icon-biyan"></i>
+            <p>我的金币</p>
+          </li>
+        </ul>
+      </div>
+      <div class="my-body-item2">
+        <ul>
+          <li v-for="(v,i) in myitem2" :key="i">
+            <i class="iconfont" :class="v.icon"></i>
+            <p>{{ v.title }}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="my-body-item3">3</div>
+      <div class="my-body-item4">4</div>
+    </div>
   </div>
 </template>
 
 <script setup>
-
+import { ref } from "vue";
+let myitem2 = ref([
+  {title:'阅读历史',icon:'icon-shouye'},
+  {title:'金选票',icon:'icon-dianyingpiao'},
+  {title:'书友圈',icon:'icon-quanquanmendianb'},
+  {title:'消息通知',icon:'icon-xiaoxitongzhi'},
+])
 </script>
 
-<style lang='scss' scoped>
-
-</style>
+<style lang='scss' scoped></style>

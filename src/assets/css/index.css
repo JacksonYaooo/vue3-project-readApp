@@ -252,28 +252,28 @@
 }
 
 /* 设置喜好 */
-.like-list{
+.like-list {
   padding: 0 20px;
 }
-.like-list h4{
+.like-list h4 {
   text-align: center;
   font-size: 16px;
   padding: 20px;
 }
-.like-list p{
+.like-list p {
   font-weight: 600;
 }
-.like-list ul{
+.like-list ul {
   display: grid;
   /* 显示3列 */
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* 设置  行与列  的间距 */
   /* 如果有2个参数分别表示行 列，如果只有一个参数表示行和列都有 */
   gap: 15px;
   margin: 10px 0;
   text-align: center;
 }
-.like-list ul li{
+.like-list ul li {
   background-color: #e0e0e0;
   border-radius: 10px;
   height: 30px;
@@ -282,13 +282,13 @@
   align-items: center;
 }
 /* 选中标签的样式 */
-.like-list .addclass{
+.like-list .addclass {
   background-color: #fbf2eb;
   color: #e2784d;
 }
 
 /* 开屏广告 */
-.spread{
+.spread {
   position: absolute;
   top: 0;
   width: 100%;
@@ -297,17 +297,17 @@
   background-size: cover;
   z-index: 999;
 }
-.spread .jump{
+.spread .jump {
   position: absolute;
   top: 20px;
   right: 24px;
 }
-.spread .jump b{
+.spread .jump b {
   margin-left: 10px;
 }
 
 /* 社区 */
-.community-hd{
+.community-hd {
   position: fixed;
   top: 0;
   left: 0;
@@ -316,67 +316,147 @@
   height: 50px;
   box-shadow: 0 0 10px #ddd;
 }
-.community-hd-item{
+.community-hd-item {
   max-width: 1080px;
 }
-.community-hd-item h3{
+.community-hd-item h3 {
   font-size: 20px;
   padding: 10px;
 }
-.community-body{
+.community-body {
   height: 2000px;
   margin-top: 50px;
   background-color: #f3f3f3;
   padding: 10px;
-
 }
-.community-body-item{
+.community-body-item {
   background-color: #fff;
   margin-bottom: 10px;
   padding: 10px;
 }
-.community-item-hd{
+.community-item-hd {
   display: flex;
   align-items: center;
 }
-.community-item-hd img{
+.community-item-hd img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.community-item-hd p{
+.community-item-hd p {
   margin: 0 10px;
 }
-.community-item-hd span{
+.community-item-hd span {
   color: var(--bgcolor);
   font-size: 12px;
   flex: 1;
   /* 占满父级的剩余空间 */
 }
-.community-share .van-cell{
+.community-share .van-cell {
   color: #999;
   font-size: 22px;
 }
-.community-item-title{
+.community-item-title {
   /* 多行省略号显示 */
   margin: 10px 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;/* 行数 */
+  -webkit-line-clamp: 3; /* 行数 */
   overflow: hidden;
 }
-.community-item-img{
+.community-item-img {
   display: flex;
 }
-.community-item-img img{
+.community-item-img img {
   overflow: hidden;
   max-width: 50%;
   margin: 0 5px;
 }
-.community-item-review{
+.community-item-review {
   text-align: center;
   margin-top: 20px;
 }
-.community-item-review span{
+.community-item-review span {
   margin: 0 30px;
+}
+/* 我的页面 */
+.my-hd {
+  background-color: #f8d447;
+  height: 160px;
+  width: 100%;
+}
+.my {
+  background-color: #f1f0f0;
+}
+.my-hd-login {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.my-hd-img {
+  margin-right: 20px;
+}
+.my-hd-login img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.tourist {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.my-hd-item button {
+  border-radius: 20px;
+  padding: 5px 8px;
+  border: 0;
+  background: none;
+  border: 1px solid #333;
+}
+.my-body-item1 {
+  background: linear-gradient(90deg, #22190e, #3d2e21, #22190e);
+  color: #e7d8ba;
+  border-radius: 10px;
+  padding: 10px;
+  margin: -40px 10px 10px 10px;
+}
+.my-body-item1 ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.my-body-item1 ul i {
+  font-size: 24px;
+}
+.my-body-item1 ul p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.my-body-item1 ul li {
+  position: relative;
+  flex: 1;
+}
+.my-body-item1 ul li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: 1px solid #4f3822;
+}
+.my-body-item2,
+.my-body-item3,
+.my-body-item4 {
+  padding-bottom: 10px;
+}
+
+.my-body-item2 ul {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+.my-body-item2 ul li i{
+  font-size: 24px;
 }
