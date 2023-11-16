@@ -12,14 +12,14 @@
           <p>{{ v.name }}</p>
           <span>{{ v.from }}</span>
           <div class="community-share">
-            <i class="iconfont icon-gengduo"></i>
+            <van-cell class="iconfont icon-gengduo" @click="showShare = true" />
           </div>
         </div>
         <div class="community-item-title">
           为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?为什么会这样?
         </div>
         <div class="community-item-img">
-          <img v-for="(item,i) in v.img_url" :key="i" :src="`/src/assets/images/${item}`" alt="">
+          <img v-for="(item, i) in v.img_url" :key="i" :src="`/src/assets/images/${item}`" alt="">
         </div>
         <div class="community-item-review">
           <span><i class="iconfont icon-fenxiangzhuanfa"></i>111</span>
@@ -27,7 +27,8 @@
           <span><i class="iconfont icon-aixin"></i>333</span>
         </div>
       </div>
-
+      <!-- 分享面板要写在遍历的外层 -->
+      <van-share-sheet v-model:show="showShare" title="立即分享给好友" :options="options" />
     </div>
 
   </div>
@@ -72,6 +73,21 @@ let community = ref([
     img_url: ['h.jpg', 'h.jpg', 'h.jpg'],
   },
 ])
+const showShare = ref(false);
+const options = [
+  [
+    { name: '微信', icon: 'wechat' },
+    { name: '朋友圈', icon: 'wechat-moments' },
+    { name: '微博', icon: 'weibo' },
+    { name: 'QQ', icon: 'qq' },
+  ],
+  [
+    { name: '复制链接', icon: 'link' },
+    { name: '分享海报', icon: 'poster' },
+    { name: '二维码', icon: 'qrcode' },
+    { name: '小程序码', icon: 'weapp-qrcode' },
+  ],
+];
 </script>
 
 <style lang='scss' scoped></style>

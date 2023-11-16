@@ -353,7 +353,7 @@
   flex: 1;
   /* 占满父级的剩余空间 */
 }
-.community-share i{
+.community-share .van-cell{
   color: #999;
   font-size: 22px;
 }
