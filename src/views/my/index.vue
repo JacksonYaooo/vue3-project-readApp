@@ -7,7 +7,9 @@
         </div>
         <div class="my-hd-item">
           <div class="tourist">游客</div>
-          <button>点击登录</button>
+          <router-link to="/login">
+            <button @click="">点击登录</button>
+          </router-link>
         </div>
       </div>
     </div>
