@@ -585,3 +585,39 @@
   font-weight: 600;
   margin: 20px;
 }
+.welfare-body{
+  padding: 20px;
+}
+.welfare-body-item1,
+.welfare-body-item2
+{
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+.welfare-body-item1 h4{
+  font-size: 16px;
+  margin: 20px 0;
+}
+.welfare-text1{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.welfare-text2{
+  color: #999;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.welfare .btn{
+  border-radius: 20px;
+  border: 0;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+.welfare-body-item1 button{
+  background-color: #e76c3b;
+  color: #fcfdd0;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
