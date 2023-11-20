@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="login-list">
-      <div @click="goBack">X</div>
+      <div @click="goBack">返回</div>
       <h2>欢迎登录</h2>
       <p>发现更多精彩好书</p>
       <input type="text" placeholder="请输入手机号">
@@ -38,7 +38,9 @@ import { useRouter } from 'vue-router';
 // useRouter相当于this.$router
 const router = useRouter();
 function goBack(){
-  router.push('/my')
+  // router.push('/my')
+  // 返回前一个页面
+  window.history.go(-1);
 }
 </script>
 

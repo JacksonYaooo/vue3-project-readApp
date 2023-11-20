@@ -496,7 +496,7 @@
 }
 .login-list h2 {
   font-size: 24px;
-  top: 20px;
+  margin-top: 20px;
   letter-spacing: 2px;
 }
 .login-list p {
@@ -524,7 +524,7 @@
 .agreement [type="checkbox"] {
   margin-right: 5px;
 }
-.login-list>button{
+.login-list > button {
   width: 100%;
   background-color: var(--bgcolor);
   border: 0;
@@ -533,31 +533,55 @@
   font-weight: 600;
   font-size: 16px;
 }
-.login-title{
+.login-title {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   font-size: 12px;
 }
 
-.login-way{
+.login-way {
   text-align: center;
   height: 100px;
 }
-.login-way p{
+.login-way p {
   font-size: 12px;
   color: #999;
 }
-.login-way ul li{
+.login-way ul li {
   display: inline-block;
   margin: 20px;
 }
-.login-way ul li i{
+.login-way ul li i {
   border: 1px solid #ddd;
   border-radius: 50%;
   padding: 6px;
   font-size: 20px;
 }
-.login-way ul li p{
+.login-way ul li p {
   margin-top: 10px;
+}
+
+/* 福利页 */
+.welfare-hd {
+  background: url(../images/bg.jpg) no-repeat top center;
+  height: 160px;
+  /* 图片等比例缩放，多余部分裁剪掉 */
+  background-size: cover;
+  color: #fcfdd0;
+}
+.welfare-hd h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 40px 0 0 20px;
+}
+/* 登录查看按钮 */
+.welfare-hd button{
+  border: 0;
+  background-color: #fcfdd0;
+  color: #e76c3b;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: 600;
+  margin: 20px;
 }
