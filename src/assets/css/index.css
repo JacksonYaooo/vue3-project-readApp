@@ -458,26 +458,26 @@
   text-align: center;
 }
 .my-body-item2 ul i,
-.my-body-item3 ul i{
+.my-body-item3 ul i {
   font-size: 24px;
 }
 .my-body-item3 ul {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   background-color: #fff;
   padding: 20px 0;
   text-align: center;
 }
-.my-body-item3 ul li{
+.my-body-item3 ul li {
   padding: 10px;
 }
-.my-body-item4{
+.my-body-item4 {
   background-color: #fff;
 }
-.my-body-item4 ul{
+.my-body-item4 ul {
   padding: 10px;
 }
-.my-body-item4 li{
+.my-body-item4 li {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -485,7 +485,79 @@
   padding: 10px;
   margin: 10px;
 }
-.my-body-item4 li p{
+.my-body-item4 li p {
   font-size: 16px;
   font-weight: 600;
+}
+
+/* 登录页 */
+.login-list {
+  padding: 20px;
+}
+.login-list h2 {
+  font-size: 24px;
+  top: 20px;
+  letter-spacing: 2px;
+}
+.login-list p {
+  font-weight: 500;
+  letter-spacing: 3px;
+  padding: 5px 0;
+}
+.login-list > input {
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  margin-top: 20px;
+  padding-bottom: 8px;
+}
+.login-list > input::placeholder {
+  color: #ddd;
+}
+.agreement {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  height: 60px;
+}
+.agreement [type="checkbox"] {
+  margin-right: 5px;
+}
+.login-list>button{
+  width: 100%;
+  background-color: var(--bgcolor);
+  border: 0;
+  height: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.login-title{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.login-way{
+  text-align: center;
+  height: 100px;
+}
+.login-way p{
+  font-size: 12px;
+  color: #999;
+}
+.login-way ul li{
+  display: inline-block;
+  margin: 20px;
+}
+.login-way ul li i{
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 20px;
+}
+.login-way ul li p{
+  margin-top: 10px;
 }

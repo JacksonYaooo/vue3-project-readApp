@@ -6,7 +6,7 @@
       <p>发现更多精彩好书</p>
       <input type="text" placeholder="请输入手机号">
       <input type="password" placeholder="请输入密码">
-      <div>
+      <div class="agreement">
         <input type="checkbox">
         <span>阅读并同意《用户服务协议》及《隐私政策》</span>
       </div>
@@ -16,8 +16,18 @@
         <span>忘记密码</span>
       </div>
     </div>
-    <div class="lgin-way">
-
+    <div class="login-way">
+      <p>其它登录方式</p>
+      <ul>
+        <li>
+          <i class="iconfont icon-icon-weixin"></i>
+          <p>微信</p>
+        </li>
+        <li>
+          <i class="iconfont icon-QQ"></i>
+          <p>QQ</p>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
